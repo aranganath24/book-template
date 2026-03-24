@@ -1,0 +1,31 @@
+project:
+  type: book
+
+book:
+  title: "book-template"
+  author: "Norah Jones"
+  repo-url: https://github.com/aranganath24/book-template 
+  repo-actions: [source, edit, issue] 
+  date: "3/23/2026"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    toc: true
+    toc-depth: 4
+    number-depth: 4
+    include-after-body: footer.html
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
